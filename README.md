@@ -38,7 +38,7 @@ remotes::install_github("sqjin/CellChat")
 
 ``` r
 install.packages("remotes")
-remotes::install_github("your-github-username/ChimeChat")
+remotes::install_github("m03077yhtnt/ChimeChat")
 ```
 
 # Example
