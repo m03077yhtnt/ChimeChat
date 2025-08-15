@@ -8,7 +8,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-URL: https://github.com/m03077yhtnt/ChimeChat
+URL: https://github.com/m03077yhtnt/ChimeChat, https://m03077yhtnt.github.io/ChimeChat/
 BugReports: https://github.com/m03077yhtnt/ChimeChat/issues
 Imports: 
     biomaRt,
