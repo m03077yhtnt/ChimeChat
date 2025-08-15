@@ -1,47 +1,34 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
-
-
 
 # ChimeChat
 
 ## Cross-species ligand–receptor analysis pipeline for paired human–mouse bulk RNA-seq data.
 
-
 # Overview
-ChimeChat is an R package that streamlines cross-species ligand–receptor (L–R) analysis when you have paired human and mouse bulk RNA-seq datasets.
-It automates:
 
-1. VST transformation of human and mouse raw counts (via DESeq2)
+ChimeChat is an R package that streamlines cross-species ligand–receptor
+(L–R) analysis when you have paired human and mouse bulk RNA-seq
+datasets. It automates:
 
-2. Mapping mouse genes to human orthologs (one-to-one preferred; else highest %ID)
+1.  VST transformation of human and mouse raw counts (via DESeq2)
 
-3. Merging both species into a unified gene expression matrix
+2.  Mapping mouse genes to human orthologs (one-to-one preferred; else
+    highest %ID)
 
-4. Ligand–receptor scoring using CellChatDB
+3.  Merging both species into a unified gene expression matrix
 
-5. Statistical testing (t-test with multiple testing correction)
+4.  Ligand–receptor scoring using CellChatDB
 
-6. Heatmap visualization of top L–R pairs
+5.  Statistical testing (t-test with multiple testing correction)
 
+6.  Heatmap visualization of top L–R pairs
 
 # Installation
 
 ## 1. Install dependencies
 
-```{r,eval=FALSE}
+``` r
 install.packages("BiocManager")
 BiocManager::install(c("DESeq2", "biomaRt", "SummarizedExperiment"))
 install.packages(c("dplyr", "tibble", "tidyr", "readxl", "pheatmap", "RColorBrewer"))
@@ -50,13 +37,14 @@ remotes::install_github("sqjin/CellChat")
 
 ## 2. Install ChimeChat from GitHub
 
-```{r,eval=FALSE}
+``` r
 install.packages("remotes")
 remotes::install_github("your-github-username/ChimeChat")
 ```
 
 # Example
-```{r,eval=FALSE}
+
+``` r
 library(ChimeChat)
 
 # Step 1: Merge and VST
