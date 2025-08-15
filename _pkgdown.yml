@@ -1,0 +1,32 @@
+url: https://m03077yhtnt.github.io/ChimeChat/
+template:
+  bootstrap: 5
+navbar:
+  structure:
+    left:
+    - reference
+    - articles
+    - news
+    right: github
+  components:
+    github:
+      icon: fa-github
+      href: https://github.com/m03077yhtnt/ChimeChat
+home:
+  title: ChimeChat
+  description: |
+    Cross-species ligand–receptor analysis for paired human–mouse bulk RNA-seq. VST, ortholog mapping, LR scoring, statistics, and heatmaps in one pipeline.
+authors:
+  Yu Hatano:
+    href: https://github.com/m03077yhtnt
+reference:
+- title: Core workflow
+  contents:
+  - run_ChimeDB
+  - get_ChimeLRscore
+  - get_ChimeStatistics
+  - run_ChimeHeatmap
+articles:
+- title: Getting started
+  navbar: ~
+
