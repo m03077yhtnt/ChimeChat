@@ -24,17 +24,17 @@ knitr::opts_chunk$set(
 ChimeChat is an R package that streamlines cross-species ligand–receptor (L–R) analysis when you have paired human and mouse bulk RNA-seq datasets.
 It automates:
 
-1. VST transformation of human and mouse raw counts (via DESeq2)
+1. Mapping mouse genes to human orthologs
 
-2. Mapping mouse genes to human orthologs (one-to-one preferred; else highest %ID)
+2. VST transformation of human and mouse raw counts (via DESeq2)
 
 3. Merging both species into a unified gene expression matrix
 
-4. Ligand–receptor scoring using CellChatDB
+4. Ligand–receptor scoring
 
-5. Statistical testing (t-test with multiple testing correction)
+5. Statistical testing
 
-6. Heatmap visualization of top L–R pairs
+6. Heatmap visualization of L–R pairs
 
 
 # Installation
@@ -60,25 +60,25 @@ remotes::install_github("your-github-username/ChimeChat")
 library(ChimeChat)
 
 # Step 1: Merge and VST
-res <- run_ChimeDB(
+ChimeData <- run_ChimeDB(
   human_file = "Human_CountData.xlsx",
   mouse_file = "Mouse_CountData.xlsx"
 )
 
 # Step 2: LR scores
-lr_scores <- get_ChimeLRscore(
-  combined        = res$combined,
+LR_scores <- get_ChimeLRscore(
+  combined        = ChimeData$combined,
   direction       = "mouse_ligand_human_receptor",
-  db_scope        = c("secreted", "contact"),
+  db_scope        = c("secreted","contact","ecm"),
   rename_to_mouse = TRUE,
-  ortholog_map    = res$ortholog_map
+  ortholog_map    = ChimeData$ortholog_map
 )
 
 # Step 3: Statistics
-stat_results <- get_ChimeStatistics(lr_scores)
+stat_results <- get_ChimeStatistics(LR_scores)
 
 # Step 4: Heatmap
-run_ChimeHeatmap(lr_scores, stat_results, n_top = 20)
+run_ChimeHeatmap(LR_scores, stat_results, n_top = 20)
 ```
 
 # License
