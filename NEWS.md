@@ -1,3 +1,5 @@
 # ChimeChat 0.1.0
 
-* Initial CRAN submission.
+* First public release.
+* Added core functions: `run_ChimeDB()`, `get_ChimeLRscore()`, etc.
+* Updated DESCRIPTION and NAMESPACE.
