@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ChimeChat
+# ChimeChat <img src="man/figures/logo.png" align="right" height="120" />
 
 ## Cross-species ligand–receptor analysis pipeline for paired human–mouse bulk RNA-seq data.
 

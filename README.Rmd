@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 
 
 
-# ChimeChat
+# ChimeChat <img src="man/figures/logo.png" align="right" height="120" />
 
 ## Cross-species ligand–receptor analysis pipeline for paired human–mouse bulk RNA-seq data.
 
