@@ -81,6 +81,12 @@ stat_results <- get_ChimeStatistics(LR_scores)
 run_ChimeHeatmap(LR_scores, stat_results, n_top = 20)
 ```
 
+<div style="display: flex; justify-content: center;">
+  <img src="man/figures/workflow.png" width="45%" style="margin-right: 10px;" />
+  <img src="man/figures/workflow2.png" width="45%" />
+</div>
+
+
 # License
 
 ## MIT © Yu Hatano
