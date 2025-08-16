@@ -25,17 +25,6 @@ datasets. It automates:
 
 # Installation
 
-## 1. Install dependencies
-
-``` r
-install.packages("BiocManager")
-BiocManager::install(c("DESeq2", "biomaRt", "SummarizedExperiment"))
-install.packages(c("dplyr", "tibble", "tidyr", "readxl", "pheatmap", "RColorBrewer"))
-remotes::install_github("sqjin/CellChat")
-```
-
-## 2. Install ChimeChat from GitHub
-
 ``` r
 install.packages("remotes")
 remotes::install_github("m03077yhtnt/ChimeChat")
@@ -74,7 +63,3 @@ run_ChimeHeatmap(LR_scores, stat_results, n_top = 20)
 <img src="man/figures/workflow2.png" width="45%" />
 
 </div>
-
-# License
-
-## MIT © Yu Hatano

@@ -77,27 +77,14 @@
 <div class="section level1">
 <h1 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h1>
-<div class="section level2">
-<h2 id="id_1-install-dependencies">1. Install dependencies<a class="anchor" aria-label="anchor" href="#id_1-install-dependencies"></a>
-</h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"BiocManager"</span><span class="op">)</span></span>
-<span><span class="fu">BiocManager</span><span class="fu">::</span><span class="fu"><a href="https://bioconductor.github.io/BiocManager/reference/install.html" class="external-link">install</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"DESeq2"</span>, <span class="st">"biomaRt"</span>, <span class="st">"SummarizedExperiment"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"dplyr"</span>, <span class="st">"tibble"</span>, <span class="st">"tidyr"</span>, <span class="st">"readxl"</span>, <span class="st">"pheatmap"</span>, <span class="st">"RColorBrewer"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"sqjin/CellChat"</span><span class="op">)</span></span></code></pre></div>
-</div>
-<div class="section level2">
-<h2 id="id_2-install-chimechat-from-github">2. Install ChimeChat from GitHub<a class="anchor" aria-label="anchor" href="#id_2-install-chimechat-from-github"></a>
-</h2>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"m03077yhtnt/ChimeChat"</span><span class="op">)</span></span></code></pre></div>
-</div>
 </div>
 <div class="section level1">
 <h1 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h1>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/m03077yhtnt/ChimeChat" class="external-link">ChimeChat</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Step 1: Merge and VST</span></span>
@@ -122,14 +109,6 @@
 <span><span class="fu"><a href="reference/run_ChimeHeatmap.html">run_ChimeHeatmap</a></span><span class="op">(</span><span class="va">LR_scores</span>, <span class="va">stat_results</span>, n_top <span class="op">=</span> <span class="fl">20</span><span class="op">)</span></span></code></pre></div>
 <div style="display: flex; justify-content: center;">
 <p><img src="reference/figures/workflow.png" width="45%" style="margin-right: 10px;"><img src="reference/figures/workflow2.png" width="45%"></p>
-</div>
-</div>
-<div class="section level1">
-<h1 id="license">License<a class="anchor" aria-label="anchor" href="#license"></a>
-</h1>
-<div class="section level2">
-<h2 id="mit--yu-hatano">MIT © Yu Hatano<a class="anchor" aria-label="anchor" href="#mit--yu-hatano"></a>
-</h2>
 </div>
 </div>
 
